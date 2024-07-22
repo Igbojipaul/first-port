@@ -1,0 +1,504 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+ background-color: rgb(66, 66, 82);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 20px;
+  z-index: 9999;
+  
+}
+.fi{
+  color: rgb(206, 237, 245);
+  font-size:  40px;
+  font-family: Verdana, Geneva, Tahoma;
+  padding: 0 50px;
+  font-weight: bold;
+  line-height: 80px;
+  
+  
+}
+a{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+ul{
+float: right;
+margin-right: 20px;
+text-transform: uppercase;
+font-weight: bold;
+/* display: flex; */
+/* gap: 30px; */
+}
+li{
+display: inline-block;
+line-height: 80px;
+margin: 0 10px;
+
+}
+a.active,a:hover{
+  background:rgb(66, 66, 82);
+  transition: 1s;
+  color: rgb(125, 163, 195);
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(114, 209, 238);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor:pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media(max-width: 650px){
+  .fi{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  a{
+    font-size: 15px;
+  }
+
+  
+}
+@media(max-width: 1050px){
+  
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  li{
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  a:hover,a.active{
+    color: #0082e6;
+    background: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    background-position: top;
+  }
+  nav{
+    background: rgb(27, 27, 31);
+    position: fixed;
+  }
+}
+.top-container{
+  margin: 10%;
+  border-style: hidden;
+  padding: 30px;
+  border-color: #0082e6;
+  line-height: 50px;
+  border-radius: 1%;
+  display: inline-block;
+  box-shadow: 5px 20px 0 rgb(208, 204, 204) ;
+}
+.colt{
+  display: inline-block;
+}
+.container{
+  margin-top: 150px;
+  margin-left: 30px;
+  border-style: hidden;
+  padding: 20px;
+  border-color: #0082e6;
+  line-height: 40px;
+  border-radius: 1px;
+  display: inline-block;
+
+  box-shadow: 0px 15px 2px 4px  rgb(208, 204, 204) ;
+}
+.colt{
+  display: inline-block;
+  transition: transform 0.3s,  0.3s,
+  color 0.3s;
+}
+.colt:hover{
+  transform: translateY(-10px);
+}
+.gold{
+  display: inline-block;
+  transition: transform 1s,  1s,
+  color 1s;
+}
+.container3:hover{
+  transform: translateY(-10px);
+}
+.container3{
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 30px;
+  border-style: hidden;
+  padding: 10px;
+  border-color: #0082e6;
+  line-height: 80px;
+  width: 250px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 15px 2px 4px  rgb(208, 204, 204) ;
+}
+
+#temper{
+  border: rgb(18, 15, 51);
+  border-style: solid;
+  border: 20px 20px 20px 20px;
+  background: rgba(50, 59, 117, 0.897);
+  border-radius: 100%;
+  color: rgb(38, 38, 64);
+  padding: 1%;
+  margin-left: 10px;
+  align-items: center;
+  
+}
+.soft{
+  font-family:  'Sacramento', cursive;;
+}
+.hat{
+  font-size: 20px;
+}
+.second-path{
+  margin: 4%;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  
+}
+.second-path2{
+  margin: 4%;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  
+}
+.s{
+  border-style: hidden;
+  margin: 2%;
+  padding: 9%;
+  align-items: center;
+  line-height: 90%;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  border-top: 5px;
+  border-bottom: 5px;
+  border-left: 5px;
+  border-right: 5px;
+  border-color: grey;
+  border-style: solid;
+  box-shadow: 0px 0px 4px ;
+}
+.categories{
+ grid-row-start: 1;
+ grid-row-end: 3;
+ grid-column-start: 1;
+ grid-column-end: 2;
+ margin-right: 30px;
+ line-height: 150%;
+ border-style: none;
+ display: block;
+ border-radius: 4px;
+ box-shadow: 5px 7px 3px 4px rgb(208, 206, 206);
+}
+.y{
+  font-size: 120%;
+  margin-bottom: 15px;
+}
+.heist{
+  padding: 1%;
+  background-color: black;
+  color: white;
+  border-radius: 7%;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s,  0.3s,
+  color 0.3s;
+}
+.heist:hover{
+  transform: translateY(-5px);
+}
+.heist:hover{
+  color: rgb(1, 1, 1);
+  background-color: white;
+}
+#contact{
+  color: grey;
+}
+#contact2{
+  color: rgb(149, 24, 7);
+}
+#contact3{
+  color: rgb(12, 131, 12);
+}
+#contact4{
+  color: rgb(153, 101, 3);
+}
+#contact6{
+  color: rgb(32, 74, 32);
+}
+#contact5{
+  color: purple;
+}
+.a{
+  font-size: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.head{
+  text-align: center;
+  margin: 5%;
+  font-size: 100%;
+}
+.third-path{
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+}
+.path{
+  border-color: #0082e6;
+  margin-left: 15%;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  display: block;
+  height: 100%;
+  line-height: 100%;
+  box-shadow: 0 0 10px rgb(181, 180, 180);
+}
+.btn{
+  color: white;
+  background-color: black;
+  height: 37px;
+  width: 90px;
+  border-radius: 7px;
+  border: none;
+  padding: 2px;
+  margin-top: 25px;
+  transition: transform 0.3s,  0.3s,
+  color 0.3s;
+}
+.btn:hover{
+  transform: translateY(-10px);
+}
+.y{
+width: 100px;
+}
+.z{
+  font-size: 100%;
+  margin-bottom: 10%;
+}
+.goat{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  height: 310px;
+ }
+.add{
+  border-style: solid;
+  border-color: rgb(7, 7, 8);
+ border-radius: 10px;
+  font-size: 15px;
+
+  height: 50px;
+  transition: transform 0.3s,  0.3s,
+  color 0.3s;
+}
+
+
+.fon{
+  font-size: 25px;
+ text-align: center;
+}
+.side{
+  float: right;
+  margin: 5%;
+}
+.ut{
+  margin: 5%;
+}
+.last-path{
+  display: flex;
+  gap: 20px;
+  padding: 5%;
+  margin-top: 20px;
+
+}
+.col{
+  width: 100%;
+  height: 100%;
+  border-style: hidden;
+  display: block;
+  box-sizing: border-box;
+}
+.lotyu{
+margin: 10%;
+}
+.earth{
+  display: inline-block;
+  text-align: center;
+  border-style: hidden;
+  padding: 3%;
+  padding-top: 1px;
+  margin: 5px;
+  line-height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  transition: transform 0.3s,  0.3s,
+  color 0.3s;
+}
+.earth:hover{
+  transform: translateY(-10px);
+}
+@media(max-width: 700px){
+  .second-path{
+    display: block;
+  
+  }
+  .categories{
+    margin-bottom: 15px;
+  }
+  .third-path{
+    display: block;
+    margin-right: 40px;
+  }
+  .add{
+    padding: 3px;
+    margin: 0.1%;
+    height: 100px;
+    width: 350px;
+    margin-left: 20px;
+  }
+ 
+  img{
+    width: 100%;
+  }
+  .last-path{
+    display: block;
+    text-align: center;
+    
+  }
+  .col{
+    margin-bottom: 15px;
+  }
+  .lotyu{
+    display: inline-block;
+  }
+}
+@keyframes animation1{
+  0%{
+    right: 20px;
+  }
+}
+.ty{
+  display: flex;
+  margin: 10%;
+  width: 200px;
+  gap: 20px;
+  justify-content: center;
+  margin-left: 50%;
+  padding: 20px;
+  overflow: hidden;
+  
+ 
+}
+.jug{
+ justify-content: center;
+ margin-right: 38px;
+ height: 500px;
+ /* border-style: solid; */
+ padding: 10px;
+ font-size: 20px;
+ position: relative;
+ animation: coub 4s  ease infinite;
+}
+@keyframes coub{
+0%{
+  left: 0;
+}
+100%{
+  left: 0;
+}
+20%{
+  left: -200px;
+}
+40%{
+  left: -140px;
+}
+60%{
+  left: -300px;
+}
+
+}
+.s{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.path{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0)
+}
+
+.s:nth-child(2){
+  transition-delay: 200ms;
+}
+.s:nth-child(3){
+  transition-delay: 400ms;
+}
+.s:nth-child(4){
+  transition-delay: 600ms;
+}
+.s:nth-child(5){
+  transition-delay: 800ms;
+}
+.s:nth-child(6){
+  transition-delay: 900ms;
+}
+.path:nth-child(2){
+  transition-delay: 200ms;
+}
+.path:nth-child(3){
+  transition-delay: 400ms;
+}
+.path:nth-child(4){
+  transition-delay: 600ms;
+}
+.path:nth-child(5){
+  transition-delay: 800ms;
+}
+.path:nth-child(6){
+  transition-delay: 900ms;
+}

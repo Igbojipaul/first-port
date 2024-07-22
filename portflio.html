@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+</head>
+<style>
+  body{
+    background-color: rgb(42, 42, 61);
+    padding: 1px;
+    width: 100%;
+  }
+  .container{
+   display: flex;
+   gap: 30px;
+   
+   padding-left: 100px;
+   width: 100%;
+   margin-top:10%;
+   animation: slideleft 3s 1;
+  }
+  .syndro{
+    width: 250px;
+  }
+  img{
+    border-radius: 35px;
+    border-style: solid;
+    border-color: rgb(75, 214, 209);
+   border-width: 5px;
+   box-shadow: 0 0 30px  rgb(75, 214, 209);
+   animation: imageslide 4s infinite 4s;
+  }
+  p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .ed{
+   padding: 10px;
+ 
+  }
+  .edr{
+  padding: 0;
+  }
+
+  .content{
+    margin-left: 700px;
+    float: right;
+    display: flex;
+    gap: 40px;
+  }
+ 
+  *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec-container{
+  padding: 6%;
+ 
+}
+.sec-containers{
+padding-top: 5px;
+margin-top: 170px;
+width: 100%;
+height: 100%;
+border-style: hidden;
+  box-shadow:6px 1px 5px 0 rgb(15, 15, 23);
+  box-sizing: border-box;
+   height: 190px;
+  font-size: 20px;
+ 
+
+}
+.about{
+ display: flex;
+ gap: 1px;
+
+}
+h3{
+  text-align: center;
+  color: rgb(75, 214, 209);
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+span{
+  color: white;
+}
+.eract{
+  margin-top: 30px;
+  padding: 1%;
+  border-radius: 40px;
+ border-style: solid;
+  background-color: rgb(75, 214, 209);
+  color: white;
+  width: 150px;
+  border-color: rgb(92, 133, 144);
+  border-width: 10px;
+  box-shadow: 0 0 5px  rgb(92, 133, 144);
+}
+.dance{
+ color: rgb(75, 214, 209);
+ text-align: center;
+ margin: 4%; 
+ font-size: 30px;
+}
+.courses{
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+.fr{
+
+  margin: 2%;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+
+  border-radius: 10px;
+  background-color: rgb(43, 48, 67);
+  animation: fr 2s 1;
+}
+h4{
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.project{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  padding-left: 190px;
+}
+.class{
+  border-style: none;
+  box-shadow: 0 0 0 ;
+  width: 250px;
+  border-radius: 20px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+ background-color: rgb(42, 42, 61);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 20px;
+  display: block;
+  z-index: 9999;
+}
+.fi{
+  color: rgb(206, 237, 245);
+  font-size:  40px;
+  font-family: Verdana, Geneva, Tahoma;
+  padding: 0 50px;
+  font-weight: bold;
+  line-height: 80px;
+  
+  
+}
+a{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+ul{
+float: right;
+margin-right: 20px;
+text-transform: uppercase;
+font-weight: bold;
+/* display: flex; */
+/* gap: 30px; */
+}
+li{
+display: inline-block;
+line-height: 80px;
+margin: 0 10px;
+
+}
+.top{
+  font-size: 40px;
+  color: white;
+}
+.ghy{
+  font-size: 70px;
+   color: white;
+}
+.ghyk{
+  color: white;
+  font-size: 60px;
+  display: inline-block;
+}
+a.active,a:hover{
+  background:rgb(66, 66, 82);
+  transition: 1s;
+  color: rgb(125, 163, 195);
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(114, 209, 238);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor:pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.senio{
+  font-size: 20px; 
+  color: white;
+}
+@media(max-width: 650px){
+  .fi{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  a{
+    font-size: 15px;
+  }
+  .helt{
+    font-size: 10px;
+  }
+
+  .courses{
+    display: block;
+    width: 100%;
+    padding: 3%;
+  }
+  .project{
+    display: inline-block;
+    padding: 25%;
+  }
+  .cd{
+    margin-bottom: 10px;
+  }
+}
+@media(max-width: 1050px){
+  
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  li{
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  a:hover,a.active{
+    color: #0082e6;
+    background: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  nav{
+    background: rgb(42, 42, 61);
+    position: fixed;
+  }
+}
+@media(max-width: 1000px){
+ .container{
+  display: block;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 80px;
+ 
+ }
+ .ed{
+  padding: 1%;  
+  margin-bottom: 20px;
+ }
+ .edr{
+  margin: 9%;
+ }
+  .about{
+  display: block;
+ }
+ 
+  .ghy{
+   font-size: 50px;
+   
+  }
+  .ghyk{
+   font-size: 35px;
+   color:white;
+   
+  }
+  .top{
+    font-size: 25px;
+  }
+  .senio{
+    font-size: 15px;
+  }
+  .syndro{
+   height: 100%;
+   width: 100%;
+  
+ 
+  }
+  .about{
+    background-color: #3a4148;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    padding: 2%;
+  }
+  .sec-container{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .sec-containers{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    margin-top: 20px;
+    line-height: 40px;
+    box-shadow: 6px 0  ;
+
+  }
+  .inner-headings{
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .helt{
+    font-size: 10px;
+  }
+}
+.inner-headings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ display: inline-block;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+
+}
+.helt{
+ position: relative;
+ color: rgb(125, 163, 195);
+ font-size: 40px;
+ animation: animation 10s 
+ ease infinite;
+ 
+}
+@keyframes animation{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 0px;
+  }
+  20%{
+    top: 0;
+  }
+  25%{
+    top: -50px;
+  }
+  45%{
+    top: -50px;
+  }
+  50%{
+    top: -110px;
+  }
+  70%{
+    top: -110px;
+  }
+  75%{
+    top: -160px;
+  }
+  95%{
+    top: -170px;
+  }
+}
+/* *{
+  animation: slideleft 3s 1;
+} */
+
+
+@keyframes imageslide{
+  0%{
+    transform: translateY(10px);
+  }
+   20%{
+    transform: translateY(10px);
+  } 
+ 30%{
+    transform: translateY(0);
+  }
+  70%{
+    transform: translateY(10px)
+  } 
+  100%{
+    transform: translateY(5px);
+  }
+}
+
+
+.cd {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.about{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+ .fr{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+
+}
+.fr:hover{
+  border-style: solid;
+  border-color: rgb(114, 209, 238);
+  border-width: 15px;
+  
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0)
+}
+
+</style>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+     <i class="fa fa-navicon"></i>
+    </label>
+     <label class="fi">EGCoding</label>
+       <ul>
+         <li class="ky"><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="courses.html">Courses</a></li>
+         <li><a href="project.html">Projects</a></li>
+         <li><a href="portflio.html">Portfolio</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+
+  <div class="container">
+    <div class="ed">
+      <p class="top">Hello, I'm</p>
+      <p  class="ghy">Chimdiebube Chukwuemeka</p>
+      <p  class="ghyk">I'm a,</p>
+      <div class="inner-headings">
+        <span class="helt">
+         
+          front-end & <br />
+          Back-end developer<br />
+          Graphic designer<br />
+         web-developer<br />
+         
+       
+        </span>
+      </div>
+      <p  class="senio" >Love creating and solving problems of any kind</p>
+      <p class="senio">My boss once told me that whatever we can think of is programming.</p>
+         <p style="font-size: 20px; color: white;">I enjoy teaching and mentoring</p>
+    </div>
+    <div class="edr">
+      <img class="syndro"  src="images/paulo.jpg" alt="paulo">
+    </div>
+   
+    </div>
+    <br><br>
+
+    <div class="about">
+      <div class="sec-container">
+        <img src="images/ebube.jpg" alt="error" width="100%">
+       
+      </div>
+      <div class="sec-containers">
+       <h3 id="About">About <span>me</span> </h3> 
+       <p style="color: rgb(75, 214, 209);  margin-bottom: 15px;"><span>I'm a</span> very skillful, creative and fast in learning and solving problrms <span>and a </span>and a lay man pattern to computer pattern</p>
+       <p><span>Founder and ceo of EGcoding Tech academy. Its beyond teaching as I explore into mentoring. Making sue students understands each and every hints and concepts using different strategies in solving coding issues</span></p>
+         <span><button class="eract">Read More</button></span>
+      </div>
+     
+    </div>
+
+    <h2 class="dance"><span>My </span> Services</h2>
+    <div class="courses">
+     
+      <div class=" fr front-end developer">
+        <h4>Front-End Developer</h4>
+        <p>Front-end developers design and develop websites and web application by using web technologies
+           like HTML,CSS,DOM and JavaScript that either run on the 
+           open web platform or function as compilation input for non-web platform environment
+        </p>
+        <span><button class="eract">Read More</button></span>
+      </div>
+      <div class=" fr Back-end developer">
+        <h4>Back-End Developer</h4>
+        <p>Django is a high-level python web frame work that enables
+           rapid development of decure and maintainable websites, built by experienced developers. 
+           Django takes care of much of the hassie of web development, so you can focus on writing 
+           your app without needing to reinvet the wheel. this is the power ful tool we are  going to use for our back-End
+        </p>
+        <span><button class="eract">Read More</button></span>
+      </div>
+      <div class="fr Data-scientist">
+        <h4>Data-scientist</h4>
+        <p>The primary objective of data science is to identify patterns in data. It analyses
+          the data and derives insights using a variety of statistical technique. A data scientist must carefully exxamine the data after data extraction, wrangling, 
+        and pre-processing with difference pattern difference patterns we lead you there </p>
+        <span><button class="eract">Read More</button></span>
+      </div>
+    </div>
+      <h2 class="dance"><span>My Latest </span> Project</h2>
+    <div class="project">
+      <div class="cd">
+        <img src="images/tech1.jpg" alt="" class="class">
+      </div>
+      <div class="cd">
+        <img src="images/tech2.jpg" alt="" class="class">
+      </div>
+      <div class="cd">
+      <img src="images/tech3.jpg" alt="" class="class">
+      </div>
+      <div class="cd">
+        <img src="images/tech4.jpg" alt="" class="class">
+      </div>
+      <div class="cd">
+        <img src="images/tech5.jpg" alt="" class="class">
+      </div>
+      <div class="cd">
+        <img src="images/tech6.jpg" alt="" class="class">
+      </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

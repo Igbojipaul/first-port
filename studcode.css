@@ -1,0 +1,187 @@
+body{
+
+    text-align: center;
+    color: #40514e;
+    margin: 0;
+}
+    .top-container{
+    position: relative;
+    margin-top: 300px;
+    background-color: #b8ebec;
+        
+    }
+     .top-cloud{
+
+        position: absolute;
+        right: 400px;
+        margin: auto auto auto auto;  
+       position: absolute;
+      bottom: 600px;
+      
+
+   
+       
+    
+    } 
+    
+     .bottom-cloud{
+        position: absolute;
+        left: 350px;
+        bottom: 300px;
+    } 
+    h1{
+        font-family: 'Sacramento', cursive;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-right: auto;
+        color: aqua;
+        font-size: 90px;
+        
+    }
+ .intro{
+    width: 40%;
+    margin: auto;
+ }
+ 
+    .mountain{
+        margin-top: 50px;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-right: auto;
+      
+
+    }
+    .middle-container {
+        margin: 100px 0;
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+    }
+h2{
+    font-size: 60px;
+    color: #11999e;
+}
+h3{
+    color: #11999e;
+    font-size: 40px;
+    font-weight: 300;
+    
+}
+p{
+    color: #505152;
+font-size: 30px;
+font-family: 'Trebuchet MS';
+
+    
+}
+.skill-row{
+    width: 50%;
+    margin: 300px auto 100px auto;
+    text-align: left;
+  position: relative;
+}
+.skill-row1{
+    width: 30%;
+    float: left;
+  position: relative;
+  margin: auto 30px 10px 30px;
+}
+
+
+.skill-row2{
+    width: 30%;
+    float: right;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+    bottom: 80px;
+    
+
+}
+.contact-me{
+    width: 40%;
+    margin: 40px auto 60px;
+}
+.btn{
+    background-color: #11999e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox1ygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #ffffff;
+}
+.btn:hover{
+    background-color: black;
+}
+.bottom-container{
+    background-color: #11999e;
+    padding: 50px 0 20px ;
+}
+.copyright{
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.footer-link{
+    color: #000000;
+    margin: 10px 20px ;
+    text-decoration: none;
+    
+}
+.footer-link:hover{
+    color: white;
+}
+.upper-class{
+    position: absolute;
+    left: 300px;
+    top: 90px;
+ 
+}
+
+  .lower-container{
+   
+    display: flex;
+  
+    margin-right: 400px;
+    margin-bottom: 200px;
+  }
+  .header-link{
+margin: 10px 50px;
+font-size: 30px;
+text-decoration: none;
+position: relative;
+left: 75%;
+top: 100px;
+
+
+  }
+  .overall{
+    background-color: #b8ebec;
+    margin: 0;
+  }
+.header-link:hover{
+    color: #000000;
+}
+hr{
+    width: 10%;
+    height: 0px;
+    border-style: dotted;
+   border-top-width: 10px;
+   border-bottom-width: 0;
+   border-right: 0;
+   border-left: 0;
+   
+   border-color: #b8ebec;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-inline: 0px;
+    margin-left: 700px   
+    
+}
+h4{
+    color: #11999e;
+}
+
+   
